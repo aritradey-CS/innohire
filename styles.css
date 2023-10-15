@@ -119,7 +119,7 @@ body {
   right: 20%;
 }
 .page2 {
-  min-height: 150vh;
+  min-height: 80vh;
   width: 100%;
   padding: 100px 5vw;
   border-bottom: 2px solid #6c6c6c;
@@ -169,4 +169,142 @@ color: var(--color2);
   color: var(--color2);
   margin-top: 20px;
   cursor: pointer;
+}
+
+.page3{
+  min-height: 500vh;
+  width: 100%;
+  padding-top: 100px;
+  position: relative;
+  z-index: 9;
+}
+.page3 h1{
+  font-size: 6.5vw;
+  font-weight: 300;
+  color: var(--color2);
+  margin-left: 100px;
+}
+.page3-part1{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.page3-part1 img{
+  height: 400px;
+  width: 550px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.page3-part1 video{
+  height: 600px;
+  width: 650px;
+  /* margin-top: -159px; */
+  margin-left: 50vw;
+}
+.page3-caption1{
+  margin-left: 26.5vw;
+  
+}
+.page3-caption2{
+  margin-left: 50%;
+  margin-top: -8vw;
+}
+.page3-part1 p,
+.page3-part1 span {
+  color: var(--color2);
+  display: flex;
+  font-size: 1.5vw;
+  font-family: var(--font-family2);
+  }
+.page3-part1 p{
+  /* margin-left: 25%; */
+  font-weight: 200;
+
+}
+.page3-part1 span{
+  font-weight: 400;
+}
+.page3-caption3{
+  margin-top: 32%;
+  margin-left: -12vw
+  
+}
+.page3-caption4{
+  margin-left: 10%;
+  margin-top: -8vw;
+}
+.page3-part2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.page3-part2 img {
+  height: 400px;
+  width: 550px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.page3-part2 video {
+  height: 600px;
+  width: 650px;
+  margin-left: 15vw;
+  margin-top: 25%;
+}
+
+.page3-caption3,
+.page3-caption4 {
+  color: var(--color2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.page3-caption3 p,
+.page3-caption4 p {
+  margin: 0;
+}
+
+.page3-part3{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page3-part3 h2{
+  font-size: 10vh;
+  margin-top: 40px;
+  margin-left: 20px;
+  color: var(--color2);
+}
+.page3-part3-discover {
+  height: 15vw;
+  width: 15vw;
+  font-size: 5vh;
+  margin-top: 80px;
+  margin-right: 5vw;
+  color: var(--color2);
+  background-color: palevioletred;
+  font-family: var(--font-family1);
+  border: none;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s; /* Add a smooth transition effect for the hover */
+}
+
+.page3-part3-discover:hover {
+  height: 18vw; /* Increase the height on hover */
+  width: 18vw; /* Increase the width on hover */
+  font-size: 8vh; /* You can adjust the font size on hover as well */
+  background-color: rgb(160, 230, 103); /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
 }

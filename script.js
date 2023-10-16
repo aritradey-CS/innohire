@@ -39,6 +39,31 @@ function loco() {
 }
 loco();
 
+var crsr = document.querySelector(".cursor")
+var main = document.querySelector(".main")
+main.addEventListener("mousemove",function(dets){
+  crsr.style.left = dets.x+"px"
+  crsr.style.top = dets.y+"px"
+
+})
+
+var noty = document.querySelector(".noti");
+var vid = document.querySelector(".btn-background");
+
+vid.addEventListener("mouseenter", function() {
+  noty.style.display = "block"; // Show the notification
+});
+
+vid.addEventListener("mousemove", function(event) {
+  noty.style.left = event.clientX + 30 + "px";
+  noty.style.top = event.clientY + 500 + "px";
+});
+
+vid.addEventListener("mouseleave", function() {
+  noty.style.display = "none"; // Hide the notification
+});
+
+
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".page1 h1",

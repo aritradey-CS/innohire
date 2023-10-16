@@ -42,8 +42,8 @@ loco();
 var crsr = document.querySelector(".cursor")
 var main = document.querySelector(".main")
 main.addEventListener("mousemove",function(dets){
-  crsr.style.left = dets.x+"px"
-  crsr.style.top = dets.y+"px"
+  crsr.style.left = dets.x+ 20+ "px"
+  crsr.style.top = dets.y+ 20+ "px"
 
 })
 
@@ -116,4 +116,26 @@ var tl3 = gsap.timeline({
 })
 tl3.to(".main", {
   backgroundColor: "rgba(0, 0, 0, 0.952)",
+})
+
+
+var boxes = document.querySelectorAll(".box")
+boxes.forEach(function(elem){
+  elem.addEventListener("mouseenter",function(){
+        
+    var att = elem.getAttribute("data-img")
+    crsr.style.width = "400px"
+    crsr.style.height = "250px"
+    crsr.style.borderRadius ="0"
+    crsr.style.backgroundImage = `url(${att})`
+
+  })
+  elem.addEventListener("mouseleave",function(){
+    elem.style.backgroundColor = "#0c0c0c"
+    var att = elem.getAttribute("data-img")
+    crsr.style.width = "20px"
+    crsr.style.height = "20px"
+    crsr.style.borderRadius ="50%"
+    crsr.style.backgroundImage = `none`
+  })
 })

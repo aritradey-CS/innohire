@@ -42,18 +42,21 @@ body {
 #nav {
   height: 55px;
   width: 100%;
-
+position: fixed;
+mix-blend-mode: difference;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 30px;
   font-family: var(--font-family4);
+  z-index: 99;
 }
 
 .page1 {
   min-height: 100vh;
   width: 100vw;
   position: relative;
+  padding-top: 12vw;
   z-index: 9;
 }
 .noti {
@@ -65,7 +68,7 @@ body {
   text-align: center;
   position: absolute;
   border-radius: 50px;
-  z-index: 99;
+  z-index: 90;
 }
 
 #nav img {
@@ -102,7 +105,7 @@ body {
   font-size: 7vw;
   font-family: var(--font-family4);
   font-weight: 200;
-  margin-top: 12vw;
+  
   margin-left: 8.5vw;
 }
 .page1 h2 {

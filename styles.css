@@ -452,23 +452,21 @@ footer {
   height: 105vh;
   width: 100%;
   background-color: #f183df;
-  
 }
-.footer-upper{
+.footer-upper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 100px 120px;
-
 }
-footer h1{
+footer h1 {
   font-family: var(--font-family3);
   font-size: 8vw;
   padding: 20px 10px;
   color: var(--color2);
   font-weight: 100;
 }
-footer button{
+footer button {
   height: 130px;
   width: 130px;
   border-radius: 80px;
@@ -478,4 +476,24 @@ footer button{
   color: var(--color2);
   margin-top: 20px;
   cursor: pointer;
+}
+
+.footer-middle {
+  padding: 70px 130px;
+  font-size: 1.5vw;
+  font-family: var(--font-family3);
+  color: var(--color2);
+  font-weight: 100;
+}
+.footer-lower {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  margin-left: 95px;
+  font-weight: 600;
+}
+.footer-lower p {
+  color: #000;
 }

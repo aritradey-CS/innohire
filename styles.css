@@ -7,7 +7,7 @@
   --font-family4: "Quicksand", sans-serif;
   --font-family5: "Raleway", sans-serif;
   --background-color1: rgba(0, 0, 0, 0.952);
-  --color1: #fff;
+  --color1: #ffffff;
   --color2: rgb(4, 4, 8);
 }
 
@@ -367,7 +367,7 @@ body {
   position: relative;
   z-index: 9;
   padding: 100px 100px;
-  background-color: var(--background-color1);
+  /* background-color: var(--background-color1); */
 }
 .elem {
   /* background-color: salmon; */
@@ -376,6 +376,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-bottom: 10px;
 }
 .elem img {
   height: 250px;

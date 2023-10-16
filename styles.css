@@ -384,6 +384,8 @@ body {
   opacity: 0;
   transition: all ease-out 0.5s;
   transform: translateY(10%) rotate(2deg);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(236, 234, 234, 0.3);
 }
 .elem img:nth-child(1) {
   left: 2%;
@@ -391,6 +393,7 @@ body {
 .elem img:nth-child(3) {
   right: 5%;
 }
+
 .text-div {
   height: 16vh;
   position: relative;

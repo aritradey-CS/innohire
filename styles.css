@@ -24,13 +24,13 @@ body {
   height: 100%;
   width: 100%;
 }
-.cursor{
+.cursor {
   height: 20px;
   width: 20px;
   border-radius: 50%;
   position: fixed;
-  background-color: #EDBFFF;
-  z-index: 9;
+  background-color: #edbfff;
+  z-index: 8;
   mix-blend-mode: difference;
   transition: top linear 0.1s left linear 0.1s;
 }
@@ -52,10 +52,12 @@ body {
 .page1 {
   min-height: 100vh;
   width: 100vw;
+  position: relative;
+  z-index: 9;
 }
 .noti {
   display: none;
-  background-color:#EDBFFF;
+  background-color: #5af79b;
   color: black;
   font-family: var(--font-family5);
   width: 90px;
@@ -64,7 +66,6 @@ body {
   border-radius: 50px;
   z-index: 99;
 }
-
 
 #nav img {
   height: 50px;
@@ -159,7 +160,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .page2-left {
   width: 40%;
@@ -167,14 +167,14 @@ body {
 .page2-right {
   width: 24%;
 }
-.page2-right button{
-height: 30px;
+.page2-right button {
+  height: 30px;
 }
-.page2-right button:hover{
+.page2-right button:hover {
   background-color: gold;
   height: 40px;
   font-size: 20px;
-  }
+}
 .page2-left h2 {
   font-size: 4vw;
   font-weight: 300;
@@ -186,7 +186,7 @@ height: 30px;
 .page2-right p {
   font-family: var(--font-family5);
   font-weight: 300;
-color: var(--color2);
+  color: var(--color2);
   font-size: 20px;
 }
 .page2-right button {
@@ -194,48 +194,47 @@ color: var(--color2);
   border-radius: 50px;
   border: none;
   padding: 4px 0;
-  background-color: #EDBFFF;
+  background-color: #edbfff;
   color: var(--color2);
   margin-top: 20px;
   cursor: pointer;
 }
 
-.page3{
-  min-height: 500vh;
+.page3 {
+  min-height: 300vh;
   width: 100%;
   padding-top: 100px;
   position: relative;
   z-index: 9;
 }
-.page3 h1{
+.page3 h1 {
   font-size: 6.5vw;
   font-weight: 300;
   color: var(--color2);
   margin-left: 100px;
 }
-.page3-part1{
+.page3-part1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
 }
-.page3-part1 img{
+.page3-part1 img {
   height: 400px;
   width: 550px;
   margin-top: 40px;
   margin-left: 20px;
 }
-.page3-part1 video{
+.page3-part1 video {
   height: 600px;
   width: 650px;
   /* margin-top: -159px; */
   margin-left: 50vw;
 }
-.page3-caption1{
+.page3-caption1 {
   margin-left: 26.5vw;
-  
 }
-.page3-caption2{
+.page3-caption2 {
   margin-left: 50%;
   margin-top: -8vw;
 }
@@ -245,13 +244,12 @@ color: var(--color2);
   display: flex;
   font-size: 1.5vw;
   font-family: var(--font-family2);
-  }
-.page3-part1 p{
+}
+.page3-part1 p {
   /* margin-left: 25%; */
   font-weight: 200;
-
 }
-.page3-part1 span{
+.page3-part1 span {
   font-weight: 400;
 }
 .page3-part2 {
@@ -259,7 +257,7 @@ color: var(--color2);
   align-items: flex-start;
   justify-content: space-between;
 }
-.page3-part2 img{
+.page3-part2 img {
   height: 400px;
   width: 550px;
   margin-top: 40px;
@@ -272,11 +270,11 @@ color: var(--color2);
   margin-left: 10vw;
   margin-top: 30%;
 }
-.page3-caption3{
+.page3-caption3 {
   margin-top: 32%;
   margin-left: -13vw;
 }
-.page3-caption4{
+.page3-caption4 {
   margin-top: 66vw;
   margin-left: -17vw;
 }
@@ -286,28 +284,26 @@ color: var(--color2);
   display: flex;
   font-size: 1.5vw;
   font-family: var(--font-family2);
-  }
-.page3-caption3 p{
+}
+.page3-caption3 p {
   /* margin-left: 25%; */
   font-weight: 200;
   margin-left: -43%;
   font-weight: 100;
 }
-.page3-caption3 span{
+.page3-caption3 span {
   font-weight: 400;
 }
 
-.page3-caption4 p{
+.page3-caption4 p {
   /* margin-left: 25%; */
   font-weight: 200;
   margin-left: -43%;
   font-weight: 100;
 }
-.page3-caption4 span{
+.page3-caption4 span {
   font-weight: 400;
 }
-
-
 
 .page3-part3 p,
 .page3-part3 span {
@@ -315,21 +311,20 @@ color: var(--color2);
   display: flex;
   font-size: 1.5vw;
   font-family: var(--font-family2);
-  }
-.page3-part3 p{
+}
+.page3-part3 p {
   /* margin-left: 25%; */
   font-weight: 200;
-
 }
-.page3-part4 span{
+.page3-part4 span {
   font-weight: 400;
 }
-.page3-part3{
+.page3-part3 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.page3-part3 h2{
+.page3-part3 h2 {
   font-size: 10vh;
   margin-top: 40px;
   margin-left: 20px;
@@ -359,6 +354,67 @@ color: var(--color2);
   height: 18vw; /* Increase the height on hover */
   width: 18vw; /* Increase the width on hover */
   font-size: 8vh; /* You can adjust the font size on hover as well */
-  background-color: rgb(160, 230, 103); /* Change the background color on hover */
+  background-color: rgb(
+    160,
+    230,
+    103
+  ); /* Change the background color on hover */
   color: #fff; /* Change the text color on hover */
+}
+.page4 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  padding: 100px 100px;
+  background-color: var(--background-color1);
+}
+.elem {
+  /* background-color: salmon; */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.elem img {
+  height: 250px;
+  width: 150px;
+  position: absolute;
+  opacity: 0;
+  transition: all ease-out 0.5s;
+  transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1) {
+  left: 2%;
+}
+.elem img:nth-child(3) {
+  right: 5%;
+}
+.text-div {
+  height: 16vh;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+}
+.elem h1 {
+  font-size: 7.5vw;
+  font-weight: 600;
+  transition: all ease-out 0.5s;
+}
+
+.elem:hover h1 {
+  transform: translateY(-100%);
+  color: #edbfff;
+}
+.elem:hover img {
+  opacity: 1;
+  transform: translateY(0%) rotate(0deg);
+}
+.page5 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rebeccapurple;
+  position: relative;
+  z-index: 9;
 }

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Heebo:wght@100;200;300;400;500;600;700;800&family=Libre+Baskerville:wght@400;700&family=Quicksand:wght@500;600&family=Raleway:wght@200;400;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root {
   --font-family1: "Gabarito", sans-serif;
   --font-family2: "Heebo", sans-serif;
@@ -52,7 +52,7 @@ body {
   z-index: 99;
 }
 
-.page1 {
+.home {
   min-height: 100vh;
   width: 100vw;
   position: relative;
@@ -101,14 +101,14 @@ body {
   border-bottom: 1.5px solid var(--color1);
 }
 
-.page1 h1 {
+.home h1 {
   font-size: 7vw;
   font-family: var(--font-family4);
   font-weight: 200;
 
   margin-left: 8.5vw;
 }
-.page1 h2 {
+.home h2 {
   font-size: 5vw;
   font-family: var(--font-family4);
   font-weight: 200;
@@ -118,7 +118,7 @@ body {
 .btn-background {
   margin-top: 10vw;
 }
-.page1 video {
+.home video {
   width: 60%;
   margin-top: 0px;
   position: relative;
@@ -134,13 +134,13 @@ body {
 
   font-family: var(--font-family4);
 }
-.page1 h3 {
+.home h3 {
   font-size: 10px;
 
   position: relative;
   left: 20%;
 }
-.page1 h4 {
+.home h4 {
   font-size: 10px;
   position: relative;
   right: 20%;
@@ -204,137 +204,139 @@ body {
   cursor: pointer;
 }
 
-.page3 {
+.features {
   min-height: 300vh;
   width: 100%;
   padding-top: 100px;
   position: relative;
   z-index: 9;
 }
-.page3 h1 {
+.features h1 {
   font-size: 6.5vw;
   font-weight: 300;
   color: var(--color2);
   margin-left: 100px;
 }
-.page3-part1 {
+.features-part1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
 }
-.page3-part1 img {
-  height: 400px;
+.features-part1 img {
+  height: 300px;
   width: 550px;
   margin-top: 40px;
   margin-left: 20px;
+  border-radius: 2px 2px 2px 2px;
 }
-.page3-part1 video {
+.features-part1 video {
   height: 600px;
   width: 650px;
   /* margin-top: -159px; */
   margin-left: 50vw;
 }
-.page3-caption1 {
+.features-caption1 {
   margin-left: 26.5vw;
 }
-.page3-caption2 {
+.features-caption2 {
   margin-left: 50%;
   margin-top: -8vw;
 }
-.page3-part1 p,
-.page3-part1 span {
+.features-part1 p,
+.features-part1 span {
   color: var(--color2);
   display: flex;
   font-size: 1.5vw;
   font-family: var(--font-family2);
 }
-.page3-part1 p {
+.features-part1 p {
   /* margin-left: 25%; */
   font-weight: 200;
 }
-.page3-part1 span {
+.features-part1 span {
   font-weight: 400;
 }
-.page3-part2 {
+.features-part2 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.page3-part2 img {
+.features-part2 img {
   height: 400px;
-  width: 550px;
+  width: 1600px;
   margin-top: 40px;
   margin-left: 20px;
 }
-.page3-part2 video {
+.features-part2 video {
   height: 600px;
   width: 650px;
   /* margin-top: -159px; */
-  margin-left: 10vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
   margin-top: 30%;
 }
-.page3-caption3 {
+.features-caption3 {
   margin-top: 32%;
   margin-left: -13vw;
 }
-.page3-caption4 {
+.features-caption4 {
   margin-top: 66vw;
   margin-left: -17vw;
 }
-.page3-part2 p,
-.page3-part2 span {
+.features-part2 p,
+.features-part2 span {
   color: var(--color2);
   display: flex;
   font-size: 1.5vw;
   font-family: var(--font-family2);
 }
-.page3-caption3 p {
+.features-caption3 p {
+  /* margin-left: 25%; */
+  font-weight: 200;
+  margin-left: -90%;
+  font-weight: 100;
+}
+.features-caption3 span {
+  font-weight: 400;
+}
+
+.features-caption4 p {
   /* margin-left: 25%; */
   font-weight: 200;
   margin-left: -43%;
   font-weight: 100;
 }
-.page3-caption3 span {
+.features-caption4 span {
   font-weight: 400;
 }
 
-.page3-caption4 p {
-  /* margin-left: 25%; */
-  font-weight: 200;
-  margin-left: -43%;
-  font-weight: 100;
-}
-.page3-caption4 span {
-  font-weight: 400;
-}
-
-.page3-part3 p,
-.page3-part3 span {
+.features-part3 p,
+.features-part3 span {
   color: var(--color2);
   display: flex;
   font-size: 1.5vw;
   font-family: var(--font-family2);
 }
-.page3-part3 p {
+.features-part3 p {
   /* margin-left: 25%; */
   font-weight: 200;
 }
-.page3-part4 span {
+.features-part4 span {
   font-weight: 400;
 }
-.page3-part3 {
+.features-part3 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.page3-part3 h2 {
+.features-part3 h2 {
   font-size: 10vh;
   margin-top: 40px;
   margin-left: 20px;
   color: var(--color2);
 }
-.page3-part3-discover {
+.features-part3-discover {
   height: 15vw;
   width: 15vw;
   font-size: 5vh;
@@ -354,7 +356,7 @@ body {
   transition: all 0.3s; /* Add a smooth transition effect for the hover */
 }
 
-.page3-part3-discover:hover {
+.features-part3-discover:hover {
   height: 18vw; /* Increase the height on hover */
   width: 18vw; /* Increase the width on hover */
   font-size: 8vh; /* You can adjust the font size on hover as well */
@@ -496,4 +498,83 @@ footer button {
 }
 .footer-lower p {
   color: #000;
+}
+
+
+
+/* ::selection{
+  color: #fff;
+  background: #664AFF;
+} */
+
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  color: #000;
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .ri-search-line{
+  position: absolute !important;
+  right: 0px !important;
+  top: 0px !important;
+  height: 55px !important;
+  width: 55px !important;
+  text-align: center !important;
+  line-height: 55px !important;
+  font-size: 20px !important;
+  color: #644bff !important;
+  cursor: pointer !important;
 }

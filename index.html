@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" href="/media/img/favicon_io/favicon-32x32.png" type="image/x-icon">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" href="/media/img/favicon_io/favicon-32x32.png" type="image/x-icon">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -25,6 +25,8 @@
   <div class="cursor"></div>
   <div id="nav">
     <img src="./media/img/favicon_io/favicon.ico" alt="" srcset="" />
+    <div class="signupicon"><i class="ri-menu-4-line"></i></div>
+   
     <div id="nav-part2">
       <h4><a href="#home">Home</a></h4>
       <h4><a href="#features">Features</a></h4>
@@ -32,15 +34,16 @@
       <h4><a href="#search">Search</a></h4>
     </div>
     <div class="nav-part3">
-      <div id="signup"></div>
+      <div id="signup">Log IN</div>
     </div>
+    
   </div>
 
   <div class="main">
     <!-- Hero Section -->
 
 
-    <div class="home">
+    <div id="home" class="home">
       <h1>Welcome to InnoHire</h1>
       <h2>Freelancing opportunities</h2>
 
@@ -57,28 +60,12 @@
 
 
 
-    <!-- <div class="page2">
-      <h1>Your Gateway to Success</h1>
-      <div class="page2-  ">
-        <div class="page2-left">
-          <h2>Welcome to YOU: Explore Self-Discovery and Personal Growth</h2>
-        </div>
-        <div class="page2-right">
-          <p>
-            Join us on a transformative journey of self-discovery and personal
-            growth with YOU. Unlock your potential and empower yourself like
-            never before.Discover a world of self-improvement and empowerment
-            with YOU. Nurturing your potential has never been easier.
-          </p>
-          <button>About Us</button>
-        </div>
-      </div>
-    </div> -->
+
 
 
     <!-- Features Section -->
 
-    <div class="features">
+    <div id="features" class="features">
       <h1>Features</h1>
       <div class="features-part1">
         <img src="./media/img/Project-Categories.jpg" alt="" srcset="" />
@@ -111,7 +98,7 @@
       </div>
 
       <!-- Search and Filter Section -->
-      <div class="wrapper">
+      <div id="search" class="wrapper">
         <div class="search-input">
           <a href="" target="_blank" hidden></a>
           <input type="text" placeholder="Type to search..">
@@ -130,6 +117,7 @@
 
         <div class="features-part3-discover">Sign Up</div>
       </div>
+      <div class="features-part3-discover2">Sign Up</div>
     </div>
 
 
@@ -144,79 +132,39 @@
 
 
       <div class="elem">
-        <img
-          src="/media/img/fig1.png"
-          alt="" />
+        <img src="/media/img/fig1.png" alt="" />
         <div class="text-div">
           <h1>John Doe</h1>
           <h1>John Doe</h1>
         </div>
-        <img
-          src="/media/img/fig2.png"
-          alt="" />
+        <img src="/media/img/fig2.png" alt="" />
       </div>
+      <img class="card-img" src="/media/img/fig1.png" alt="" />
+
       <div class="elem">
-        <img
-          src="/media/img/fig3.png"
-          alt="" />
+        <img src="/media/img/fig3.png" alt="" />
         <div class="text-div">
           <h1>Jane Smith</h1>
           <h1>Jane Smith</h1>
         </div>
-        <img
-          src="/media/img/fig4.png"
-          alt="" />
+        <img src="/media/img/fig4.png" alt="" />
       </div>
+      <img class="card-img" src="/media/img/fig4.png" alt="" />
+
       <div class="elem">
-        <img
-          src="/media/img/fig5.jpg"
-          alt="" />
+        <img src="/media/img/fig5.jpg" alt="" />
         <div class="text-div">
           <h1>Projects</h1>
           <h1>Projects</h1>
         </div>
-        <img
-          src="/media/img/fig6.png"
-          alt="" />
+        <img src="/media/img/fig6.png" alt="" />
       </div>
+      <img class="card-img" src="/media/img/fig6.png" alt="" />
     </div>
-    <!-- <div class="page5">
-      <h2>MEET MENTORS</h2>
-      <div class="box"
-        data-img="https://plus.unsplash.com/premium_photo-1666283137460-4275fbd76e51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8eW9nYSUyMHRyYWluZXJ8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60">
-        <h3>Yoga Mentor</h3>
-        <h4>05:00am</h4>
-      </div>
-      <div class="box"
-        data-img="https://plus.unsplash.com/premium_photo-1672862925604-9079f0a492e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3ltJTIwdHJhaW5lcnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60  ">
-        <h3>Gym Trainer</h3>
-        <h4>07:00am</h4>
-      </div>
-      <div class="box"
-        data-img="https://images.unsplash.com/photo-1514050566906-8d077bae7046?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydGFpbCUyMGFydHMlMjBpbnN0cnVjdG9yfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60">
-        <h3>Martial Arts Instructor</h3>
-        <h4>08:00am</h4>
-      </div>
-      <div class="box"
-        data-img="https://images.unsplash.com/photo-1518609571773-39b7d303a87b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGlsYXRlcyUyMGluc3RydWN0b3J8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60">
-        <h3>Pilates Instructor</h3>
-        <h4>04:00pm</h4>
-      </div>
-      <div class="box"
-        data-img="https://plus.unsplash.com/premium_photo-1661630815050-7db8c468c6d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3Jvc3NmaXQlMjBjb2FjaHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
-        <h3>CrossFit Coach</h3>
-        <h4>06:00pm</h4>
-      </div>
-      <div class="box"
-        data-img="https://plus.unsplash.com/premium_photo-1663050901483-ee8703cc8372?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHBlcnNvbmFsJTIwdHJhaW5lcnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
-        <h3>Personal Trainer</h3>
-        <h4>08:00pm</h4>
-      </div>
-    </div> -->
 
 
     <!-- Testimonials Section -->
-    <div class="testimonials">
+    <div id="testimonials" class="testimonials">
       <h2>WHAT USER SAYS</h2>
       <div class="container">
         <div class="comment__container opened" id="first-comment">
@@ -371,17 +319,17 @@
       <div class="footer-lower">
         <p>
           <a href="#">INNOHIRE Ltd<br>abcd road, India</a>
-          
+
         </p>
         <p>
           <a href="#">GENERAL INQUIRIES <br> classes2career1@gmail.com</a>
-          
-          
+
+
         </p>
         <p>
           <a href="#">FOLLOW US <br> classes2career1</a>
 
-          
+
         </p>
       </div>
     </footer>

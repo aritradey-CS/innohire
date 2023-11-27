@@ -36,8 +36,26 @@ function loco() {
 
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
+
+// Add ScrollTrigger to trigger smooth scroll when clicking on Search link
+ScrollTrigger.create({
+    trigger: "#search", // ID of the trigger element
+    start: "top top", // Start trigger at the top of the viewport
+    onEnter: () => locoScroll.scrollTo("#search"), // Scroll to the Search section when the trigger enters the viewport
+});
+
+// Add ScrollTrigger to trigger smooth scroll when clicking on Testimonials link
+ScrollTrigger.create({
+    trigger: "#testimonials", // ID of the trigger element
+    start: "top top", // Start trigger at the top of the viewport
+    onEnter: () => locoScroll.scrollTo("#testimonials"), // Scroll to the Testimonials section when the trigger enters the viewport
+});
+
+
 }
 loco();
+
+
 
 var crsr = document.querySelector(".cursor")
 var main = document.querySelector(".main")
@@ -140,6 +158,8 @@ boxes.forEach(function (elem) {
   })
 })
 
+
+
 function search() {
   // getting all required elements
 const searchWrapper = document.querySelector(".search-input");
@@ -224,3 +244,4 @@ showContainers.forEach((btn) =>
 }
 
 review ();
+

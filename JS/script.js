@@ -37,19 +37,19 @@ function loco() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 
-// Add ScrollTrigger to trigger smooth scroll when clicking on Search link
-ScrollTrigger.create({
+  // Add ScrollTrigger to trigger smooth scroll when clicking on Search link
+  ScrollTrigger.create({
     trigger: "#search", // ID of the trigger element
     start: "top top", // Start trigger at the top of the viewport
     onEnter: () => locoScroll.scrollTo("#search"), // Scroll to the Search section when the trigger enters the viewport
-});
+  });
 
-// Add ScrollTrigger to trigger smooth scroll when clicking on Testimonials link
-ScrollTrigger.create({
+  // Add ScrollTrigger to trigger smooth scroll when clicking on Testimonials link
+  ScrollTrigger.create({
     trigger: "#testimonials", // ID of the trigger element
     start: "top top", // Start trigger at the top of the viewport
     onEnter: () => locoScroll.scrollTo("#testimonials"), // Scroll to the Testimonials section when the trigger enters the viewport
-});
+  });
 
 
 }
@@ -162,86 +162,86 @@ boxes.forEach(function (elem) {
 
 function search() {
   // getting all required elements
-const searchWrapper = document.querySelector(".search-input");
-const inputBox = searchWrapper.querySelector("input");
-const suggBox = searchWrapper.querySelector(".autocom-box");
-const icon = searchWrapper.querySelector(".icon");
-let linkTag = searchWrapper.querySelector("a");
-let webLink;
+  const searchWrapper = document.querySelector(".search-input");
+  const inputBox = searchWrapper.querySelector("input");
+  const suggBox = searchWrapper.querySelector(".autocom-box");
+  const icon = searchWrapper.querySelector(".icon");
+  let linkTag = searchWrapper.querySelector("a");
+  let webLink;
 
-// if user press any key and release
-inputBox.onkeyup = (e)=>{
+  // if user press any key and release
+  inputBox.onkeyup = (e) => {
     let userData = e.target.value; //user enetered data
     let emptyArray = [];
-    if(userData){
-        icon.onclick = ()=>{
-            webLink = `https://www.google.com/search?q=${userData}`;
-            linkTag.setAttribute("href", webLink);
-            linkTag.click();
-        }
-        emptyArray = suggestions.filter((data)=>{
-            //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
-            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
-        });
-        emptyArray = emptyArray.map((data)=>{
-            // passing return data inside li tag
-            return data = `<li>${data}</li>`;
-        });
-        searchWrapper.classList.add("active"); //show autocomplete box
-        showSuggestions(emptyArray);
-        let allList = suggBox.querySelectorAll("li");
-        for (let i = 0; i < allList.length; i++) {
-            //adding onclick attribute in all li tag
-            allList[i].setAttribute("onclick", "select(this)");
-        }
-    }else{
-        searchWrapper.classList.remove("active"); //hide autocomplete box
-    }
-}
-
-function select(element){
-    let selectData = element.textContent;
-    inputBox.value = selectData;
-    icon.onclick = ()=>{
-        webLink = `https://www.google.com/search?q=${selectData}`;
+    if (userData) {
+      icon.onclick = () => {
+        webLink = `https://www.google.com/search?q=${userData}`;
         linkTag.setAttribute("href", webLink);
         linkTag.click();
+      }
+      emptyArray = suggestions.filter((data) => {
+        //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+        return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+      });
+      emptyArray = emptyArray.map((data) => {
+        // passing return data inside li tag
+        return data = `<li>${data}</li>`;
+      });
+      searchWrapper.classList.add("active"); //show autocomplete box
+      showSuggestions(emptyArray);
+      let allList = suggBox.querySelectorAll("li");
+      for (let i = 0; i < allList.length; i++) {
+        //adding onclick attribute in all li tag
+        allList[i].setAttribute("onclick", "select(this)");
+      }
+    } else {
+      searchWrapper.classList.remove("active"); //hide autocomplete box
+    }
+  }
+
+  function select(element) {
+    let selectData = element.textContent;
+    inputBox.value = selectData;
+    icon.onclick = () => {
+      webLink = `https://www.google.com/search?q=${selectData}`;
+      linkTag.setAttribute("href", webLink);
+      linkTag.click();
     }
     searchWrapper.classList.remove("active");
-}
+  }
 
-function showSuggestions(list){
+  function showSuggestions(list) {
     let listData;
-    if(!list.length){
-        userValue = inputBox.value;
-        listData = `<li>${userValue}</li>`;
-    }else{
+    if (!list.length) {
+      userValue = inputBox.value;
+      listData = `<li>${userValue}</li>`;
+    } else {
       listData = list.join('');
     }
     suggBox.innerHTML = listData;
-}
+  }
 
 }
 
-search ();
+search();
 
-function review(){
+function review() {
   const showContainers = document.querySelectorAll(".show-replies");
 
-showContainers.forEach((btn) =>
-  btn.addEventListener("click", (e) => {
-    let parentContainer = e.target.closest(".comment__container");
-    let _id = parentContainer.id;
-    if (_id) {
-      let childrenContainer = parentContainer.querySelectorAll(
-        `[dataset=${_id}]`
-      );
-      childrenContainer.forEach((child) => child.classList.toggle("opened"));
-    }
-  })
-);
+  showContainers.forEach((btn) =>
+    btn.addEventListener("click", (e) => {
+      let parentContainer = e.target.closest(".comment__container");
+      let _id = parentContainer.id;
+      if (_id) {
+        let childrenContainer = parentContainer.querySelectorAll(
+          `[dataset=${_id}]`
+        );
+        childrenContainer.forEach((child) => child.classList.toggle("opened"));
+      }
+    })
+  );
 
 }
 
-review ();
+review();
 

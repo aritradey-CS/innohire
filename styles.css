@@ -70,8 +70,8 @@ body {
 }
 #signup {
   cursor: pointer;
-  font-size: 16px;
-  padding: 10px 20px;
+  font-size: 12px;
+  padding: 8px 15px;
   background-color: #3498db;
   color: #fff;
   border: none;
@@ -644,7 +644,7 @@ body {
   transform: translateY(0%) rotate(0deg);
 }
 .card-img {
- display: none;
+  display: none;
 }
 .container {
   width: min(90%, 1140px);
@@ -745,8 +745,7 @@ body {
     right: 5%;
   }
   .card-img {
-  
-    display:flex;
+    display: flex;
     height: 250px;
     width: 350px;
     position: absolute;
@@ -757,7 +756,7 @@ body {
   .text-div {
     margin-right: 100px;
     margin-left: 100px;
-    /* margin-top: 10px; */
+    margin-top: 10px;
 
     height: 16vh;
     position: relative;
@@ -765,7 +764,6 @@ body {
     overflow: hidden;
     /* border-radius: 10px; */
     /* box-shadow: 0 0 10px rgba(236, 234, 234, 0.3); */
-    
   }
   .text-div h1:nth-child(1) {
     display: none;
@@ -777,8 +775,6 @@ body {
     font-weight: 600;
     transition: all ease-out 0.5s;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-   
-    
   }
 
   .elem:hover h1 {
@@ -788,6 +784,12 @@ body {
   .elem:hover img {
     opacity: 1;
     transform: translateY(0%) rotate(0deg);
+  }
+  .testimonials {
+    padding: 150px 25px;
+  }
+  .testimonials h2 {
+    margin-top: 150px;
   }
 }
 .page5 {
@@ -836,7 +838,7 @@ footer {
   transition: color 0.3s ease-in-out;
 }
 .footer-upper button {
-  background-color: #4caf50;
+  background-color: #12468b;
   color: #fff;
   /* padding: 10px 20px; */
   height: 130px;
@@ -972,11 +974,41 @@ footer button {
 }
 @media only screen and (max-width: 900px) {
   .footer-upper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 10px;
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center align text */
   }
+
+  .footer-upper h1 {
+    font-size: 5vh; /* Adjust font size for smaller screens */
+    margin-bottom: 20px; /* Add some spacing between text and button */
+  }
+
+  .footer-upper button {
+    height: 80px; /* Adjust height for smaller screens */
+    width: 80px; /* Adjust width for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+    .footer-middle {
+      padding: 50px 20px; /* Adjust padding for smaller screens */
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+      text-align: center; /* Center align text */
+    }
+  
+    .footer-lower {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding-left: 20px; /* Adjust padding for smaller screens */
+      margin-left: 0; /* Reset margin-left for smaller screens */
+      width: auto; /* Allow content to take full width */
+    }
+  
+    .footer-lower p {
+      margin-bottom: 15px; /* Add some spacing between paragraphs */
+    }
+  }
+  
   .wrapper {
     max-height: 80vh;
     max-width: 40vh;

@@ -23,10 +23,9 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
-body {
-  overflow-x: hidden; /* Prevent horizontal scrolling on smaller screens */
-}
+
 @media only screen and (max-width: 900px) {
   html,
   body {
@@ -179,7 +178,7 @@ body {
   .signupicon {
     display: block;
     font-size: 30px;
-    margin-left: 40vh;
+    margin-left: 90vw;
     margin-top: -60px;
     color: #dadada;
   }
@@ -336,19 +335,37 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
+
+
 .features-part1 img {
   height: 300px;
   width: 550px;
   margin-top: 40px;
   margin-left: 20px;
-  border-radius: 2px 2px 2px 2px;
+  border-radius: 8px; /* Increased border-radius for a smoother look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added a smooth transition effect */
+
 }
+
+.features-part1 img:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover for depth */
+}
+
+
+
+
+
 .features-part1 video {
   height: 600px;
   width: 650px;
   /* margin-top: -159px; */
   margin-left: 50vw;
 }
+
+
+
 .features-caption1 {
   margin-left: 26.5vw;
 }
@@ -509,7 +526,7 @@ body {
     height: 200px;
     width: 350px;
     margin-top: 40px;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-right: 5px;
     border-radius: 2px 2px 2px 2px;
   }
@@ -517,7 +534,7 @@ body {
     height: 300px;
     width: 350px;
     /* margin-top: -159px; */
-    margin-left: 30px;
+    margin-left: 20px;
     margin-right: 2vw;
   }
   .features-part2 img {
@@ -571,14 +588,24 @@ body {
   .features-part4 h2 {
     font-size: 3vh;
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 5px;
     color: var(--color1);
   }
   .features-part4 span {
     font-weight: 100;
   }
 }
-
+@media only screen and (max-width: 740px) {
+  .features-part1 img {
+    margin-left: 5px;
+  }
+  .features-part1 video {
+    margin-left: 5px;
+  }
+  .features-part2 video {
+    margin-left: -322px;
+  }
+}
 .page4 {
   min-height: 120vh;
   width: 100%;
@@ -605,8 +632,8 @@ body {
   margin-top: 150px;
 }
 .elem img {
-  height: 250px;
-  width: 350px;
+  height: 30vh;
+  width: 40vh;
   position: absolute;
   opacity: 0;
   transition: all ease-out 0.5s;
@@ -749,7 +776,7 @@ body {
     height: 250px;
     width: 350px;
     position: absolute;
-    margin-left: 20px;
+    margin-left: 2.5%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(236, 234, 234, 0.3);
   }
@@ -792,6 +819,26 @@ body {
     margin-top: 150px;
   }
 }
+
+@media only screen and (max-width: 740px) {
+  .card-img {
+    display: flex;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(236, 234, 234, 0.3);
+  }
+  .text-div h1 {
+    width: 120vw;
+    margin-top: 85px;
+    margin-bottom: 150px;
+  }
+}
+
 .page5 {
   min-height: 100vh;
   width: 100%;
@@ -882,26 +929,64 @@ footer button {
   font-family: var(--font-family3);
   color: var(--color2);
   font-weight: 100;
+}.footer-lower {
+  margin-left: 7vw;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  padding-left: 30px;
+  font-weight: 600;
+  
 }
-.footer-lower {
-  width: 40vw;
+
+.footer-lower p {
+  font-size: 2vh;
+  color: var(--color2);
+  margin: 10px 0;
+  display: flex; /* Added display flex for side-by-side layout */
+  align-items: center; /* Centering the content vertically */
+}
+
+.footer-lower a {
+  margin-right: 40px;
+  text-decoration: none;
+}
+.footer-lower i{
+  margin-right: 20px;
+}
+.ri-map-pin-fill {
+  color: yellow !important;
+  margin-right: 5px; /* Added margin between icon and text */
+}
+
+.ri-mail-send-fill {
+  color: red;
+  margin-right: 5px; /* Added margin between icon and text */
+}
+
+.follow img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px; /* Added margin between social icons for spacing */
+}
+
+.social-icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 30px;
-  margin-left: 95px;
-  font-weight: 600;
 }
-.footer-lower p {
-  color: var(--color2);
-}
-.footer-lower a {
-  text-decoration: none;
+
+@media only screen and (max-width: 900px) {
+  .footer-lower {
+   
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .wrapper {
   max-height: 80vh;
-  max-width: 150vh;
+  max-width: 60vw;
   margin: 150px auto;
 }
 
@@ -990,28 +1075,28 @@ footer button {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
 
-    .footer-middle {
-      padding: 50px 20px; /* Adjust padding for smaller screens */
-      font-size: 1.2rem; /* Adjust font size for smaller screens */
-      text-align: center; /* Center align text */
-    }
-  
-    .footer-lower {
-      flex-direction: column; /* Stack items vertically */
-      align-items: flex-start; /* Align items to the start */
-      padding-left: 20px; /* Adjust padding for smaller screens */
-      margin-left: 0; /* Reset margin-left for smaller screens */
-      width: auto; /* Allow content to take full width */
-    }
-  
-    .footer-lower p {
-      margin-bottom: 15px; /* Add some spacing between paragraphs */
-    }
+  .footer-middle {
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    text-align: center; /* Center align text */
   }
-  
+
+  .footer-lower {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding-left: 20px; /* Adjust padding for smaller screens */
+    margin-left: 0; /* Reset margin-left for smaller screens */
+    width: auto; /* Allow content to take full width */
+  }
+
+  .footer-lower p {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px; /* Add some spacing between paragraphs */
+  }
   .wrapper {
     max-height: 80vh;
-    max-width: 40vh;
+    max-width: 75vw;
     margin: 150px auto;
   }
 
